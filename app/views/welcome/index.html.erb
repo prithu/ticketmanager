@@ -1,0 +1,35 @@
+Welcome to ticketing system
+<a href="/welcome/new_ticket"> Create ticket </a><br>
+
+Create User<a href="/welcome/new_user"> Create User </a><br>
+
+<table>
+<tr>
+<td><h4>Name</h4></td>
+<td><h4>Details</h4></td>
+</tr>
+<% @tickets.each do |ticket| %>
+<tr>
+<td><%= ticket.name %></td>
+<td><%= ticket.details %></td>
+</tr>
+<% end %>
+
+</table>
+
+
+
+
+<table>
+<tr>
+<td><h4>User Name</h4></td>
+<td><h4>Address</h4></td>
+</tr>
+<% @users.each do |user| %>
+<tr>
+<td><%= user.name %></td>
+<td><%= user.address %></td>
+</tr>
+<% end %>
+
+</table>

@@ -1,0 +1,8 @@
+<%= form_tag("/welcome/new_user", :method => "post") do %>
+User name:<%=text_field_tag :name %><br>
+
+Address<%=text_area_tag :address %><br>
+
+<%=submit_tag %>
+
+<% end %>
